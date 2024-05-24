@@ -1,10 +1,23 @@
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1600px) {
     #profile {
         height: 83vh;
         margin-bottom: 6rem;
     }
     .about-containers, .experience-containers, .container-col{
         flex-wrap: wrap;
+    }
+    .company-logo {
+        height: 140px;
+        width: 140px;
+    }
+    .experience-containers{
+        gap: 0.5rem;
+    }
+    .container-col{
+        gap: 0.5rem;
+    }
+    .container-row {
+        gap: 0.5rem;
     }
 }
 
