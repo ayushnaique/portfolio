@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayush Naique</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Ayush Naique</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Ayush Naique</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#education" onclick="toggleMenu()">Education</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/profile.png" alt="Ayush Naique profile" id="profile-pic">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1"> Hello There, I'm</p>
+            <h1 class="title">Ayush Naique</h1>
+            <p class="section__text__p2">Machine Learning / Software Dev Enthusiast</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/resume.pdf')">Resume</button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact</button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/linkedin.svg" alt="LinkedIn Profile" class="icon" onclick="location.href='https://www.linkedin.com/in/ayushnaique28/'">
+                <img src="./assets/github.svg" alt="GitHub Profile" class="icon" onclick="location.href='https://www.github.com/ayushnaique'">
+            </div>
+        </div>
+        <img src="./assets/arrow-down-solid.svg" alt="Arrow icon" class="icon arrow" onclick="location.href='#about'">
+    </section>
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="./assets/secene.jpg" alt="Experience-gif" class="about-gif">
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container" onclick="location.href='#experience'">
+                        <img src="./assets/laptop-code-solid.svg" alt="experience icon" class="icon">
+                        <h3>Experience</h3>
+                        <p>~1 year Intern Experience<br />Machine Learning<br />Software Development</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/school-solid.svg" alt="education icon" class="icon" onclick="location.href='#education'">
+                        <h3>Education</h3>
+                        <p>B.Tech Computer Science & Engineering<br /> M.S. Computer Science</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus nam ut, natus voluptatem harum perspiciatis cum est qui. Voluptates, nostrum! Tempore, iste! Veritatis fugit at voluptate qui ipsum aut animi!
+                    </p>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow-down-solid.svg" alt="Arrow icon" class="icon arrow" onclick="location.href='#education'">
+    </section>
+    <section id="education">
+        <p class="section__text__p1">My</p>
+        <h1 class="title">Education</h1>
+        <div class="experience-details-container">
+            <div class="experience-containers">
+                <div class="container-row">
+                    <div class="details-container">
+                        <h2 class="experience-sub-title">National Institute of Technology Goa</h2>
+                        <p>B.Tech Computer Science & Engineering</p>
+                        <p>Aug. 2019 - May 2023</p>
+                        <div class="article-container">
+                            <img src="./assets/NIT_Goa_logo.png" alt="Smartknower" class="company-logo">
+                            <article>
+                                <div>
+                                    <h3>Relevant Courses</h3>
+                                    <p>Machine Learning, Cryptography, Computer Systems Architecture, OOP</p>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="details-container">
+                        <h2 class="experience-sub-title">New York University</h2>
+                        <p>M.S. Computer Science</p>
+                        <p>Exp. May 2025</p>
+                        <div class="article-container">
+                            <img src="./assets/NYU_logo.jpeg" alt="NCPOR" class="company-logo">
+                            <article>
+                                <div>
+                                    <h3>Relevant Courses</h3>
+                                    <p>Operating Systems, Algorithms, Compiler Construction, Adv. Machine Learning</p>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow-down-solid.svg" alt="Arrow icon" class="icon arrow" onclick="location.href='#experience'">
+    </section>
+    <section id="experience">
+        <p class="section__text__p1">My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+            <div class="experience-containers">
+                <div class="container-col">
+                    <div class="details-container">
+                        <h2 class="experience-sub-title">Software Development Intern</h2>
+                        <p>Smartknower Ltd.</p>
+                        <div class="article-container">
+                            <img src="./assets/smartknower_logo.jpeg" alt="Smartknower" class="company-logo">
+                            <article>
+                                <div>
+                                    <h3>Key Skills</h3>
+                                    <p>Python, Scikit-Learn, Pytorch, Clustering algorithms</p>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="details-container">
+                        <h2 class="experience-sub-title">Machine Learning Intern</h2>
+                        <p>National Center for Polar and Ocean Research</p>
+                        <div class="article-container">
+                            <img src="./assets/NCPOR_logo.png" alt="NCPOR" class="company-logo">
+                            <article>
+                                <div>
+                                    <h3>Key Skills</h3>
+                                    <p>Python, Scikit-Learn, Keras, Tensorflow, Time-Series, Weather Forecasting</p>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-col">
+                    <div class="details-container">
+                        <h2 class="experience-sub-title">Undergraduate Researcher</h2>
+                        <p>National Institute of Technology Goa</p>
+                        <div class="article-container">
+                            <img src="./assets/NIT_Goa_logo.png" alt="NIT-Goa" class="company-logo">
+                            <article>
+                                <div>
+                                    <h3>Key Skills</h3>
+                                    <p>Python, Pytorch, Audio processing, Dialect Classification</p>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="details-container">
+                        <h2 class="experience-sub-title">Graduate Researcher</h2>
+                        <p>NYU Langone Health</p>
+                        <div class="article-container">
+                            <img src="./assets/NYU_Langone_logo.png" alt="NYU-Langone" class="company-logo">
+                            <article>
+                                <div>
+                                    <h3>Key Skills</h3>
+                                    <p>Python, Pytorch, Classification based on Radiograph images</p>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow-down-solid.svg" alt="Arrow icon" class="icon arrow" onclick="location.href='#contact'">
+    </section>
+    <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assets/envelope-solid.svg" alt="email-icon" class="icon contact-icon">
+                <div class="mail-div">
+                    <p><a href="mailto:asn9772@nyu.edu">asn9772@nyu.edu</a></p>
+                    <p><a href="mailto:ayush.naique@nyulangone.org">ayush.naique@nyulangone.org</a></p>
+                    <p><a href="mailto:ayushnaique28@gmail.com">ayushnaique28@gmail.com</a></p>
+                </div>
+            </div>
+            <div class="contact-info-container">
+                <img src="./assets/linkedin.svg" alt="linkedin-icon" class="icon contact-icon">
+                <p><a href="https://www.linkedin.com/in/ayushnaique28/">ayushnaique28</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./assets/github.svg" alt="github-icon" class="icon contact-icon">
+                <p><a href="https://www.github.com/ayushnaique">ayushnaique</a></p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#"><img src="./assets/up-arrow.svg" alt="arrow-up" class="icon"></a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2024 Ayush Naique. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
